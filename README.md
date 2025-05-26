@@ -1,7 +1,7 @@
 # naughty-pico
 Raspberry pi pico, but a rubberducky (can execute payload from pico's own storage)
 
-<p>Steps to make it work</p>
+<p>Steps to make it work:</p>
 <li>Download rubberducky generator.exe and execute it</li>
 <li>Choose a location where the files should be placed. (Location doesn't matter)</li>
 <li>Connect Raspberry pi pico (while holding the BOOTSEL button) to windows mashine using USB</li>
@@ -19,4 +19,7 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 <li>With 7z open the root directory of the pico, for example: "D:\" as path</li>
 <li>Edit payload.cmd to your likings (bottom command ejects the pico from the connected device)</li>
 <li>Edit code.py and uncomment the bottom lines to let it work</li>
+
+<h2>Nice to know</h2>
 <li>It will start immediately, to edit the payload.cmd or code.py, do: WIN + L to goto the lock screen, then wait for the pico to finish, then login and edit the pico</li>
+<li>Use <code>%~d0</code> in payload.cmd to use as disk variable. Example: %~d0 is the same as D:\</li>
