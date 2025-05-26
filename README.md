@@ -22,4 +22,4 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 
 <h2>Nice to know</h2>
 <li>It will start immediately, to edit the payload.cmd or code.py, do: WIN + L to goto the lock screen, then wait for the pico to finish, then login and edit the pico</li>
-<li>Use <code>%~d0</code> in payload.cmd to use as disk variable. Example: %~d0 is the same as D:\</li>
+<li>Use <code>%~d0</code> in payload.cmd to use as disk variable. Example: %~d0 is the drive letter of the disk payload.cmd is executed from in this format: LETTER:\</li>
