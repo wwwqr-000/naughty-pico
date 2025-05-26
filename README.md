@@ -13,7 +13,7 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 <li>Place the code.py file from this repo in the root directory of the pico</li>
 <li>Place the payload.cmd file in the root directory of the pico</li>
 <li>Install 7z (if you don't have it already)</li>
-<li>Execute <code>attrib +h +s</code> in the root directory of the pico</li>
+<li>Execute <code>attrib +h +s *</code> in the root directory of the pico</li>
 <li>Execute <code>attrib +h +s .fseventsd && attrib +h +s adafruit_hid && attrib +h +s lib</code> in the root directory of the pico</li>
 <li>Reconnect the pico</li>
 <li>With 7z open the root directory of the pico, for example: "D:\" as path</li>
