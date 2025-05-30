@@ -20,3 +20,4 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 <h2>Nice to know</h2>
 <li>It will start immediately, to edit the payload.cmd or code.py, do: WIN + L to goto the lock screen, then wait for the pico to finish, then login and change <code>trigger(True)</code> to <code>trigger(False)</code> in code.py</li>
 <li>Use <code>%~d0</code> in payload.cmd to use as disk variable. Example: %~d0 is the drive letter of the disk payload.cmd is executed from in this format: LETTER:\</li>
+<li>You can change the name of the drive of the pico in <code>autorun.inf</code></li>
