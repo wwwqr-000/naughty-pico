@@ -1,7 +1,7 @@
 # naughty-pico
 Raspberry pi pico, but a rubberducky (can execute payload from pico's own storage)
 
-<p>Steps to make it work:</p>
+<h2>Steps to make it work</h2>
 <li>Connect Raspberry pi pico (while holding the BOOTSEL button) to windows mashine using USB</li>
 <li>Drop <code>reset.uf2</code> into the root directory of the pico</li>
 <li>Wait for the pico to reconnect</li>
