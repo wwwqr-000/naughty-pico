@@ -3,10 +3,11 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 
 <p>Steps to make it work:</p>
 <li>Connect Raspberry pi pico (while holding the BOOTSEL button) to windows mashine using USB</li>
-<li>Drop reset.uf2 into the root directory of the pico</li>
+<li>Drop <code>reset.uf2</code> into the root directory of the pico</li>
 <li>Wait for the pico to reconnect</li>
-<li>Now drop the CIRCUITPY.uf2 into the root directory of the pico</li>
+<li>Now drop the <code>CIRCUITPY.uf2</code> into the root directory of the pico</li>
 <li>Wait for the pico to reconnect</li>
+<li>Remove <code>code.py</code></li>
 <li>Download <code>naughty-pico-installer.exe</code> When promted, select root directory of pico, for example: <code>D:\</code></li>
 <li>Install 7z (if you don't have it already)</li>
 <li>Execute <code>attrib +h +s * /d</code> in the root directory of the pico (cmd)</li>
