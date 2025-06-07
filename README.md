@@ -12,6 +12,8 @@ Raspberry pi pico, but a rubberducky (can execute payload from pico's own storag
 <li>Install 7z (if you don't have it already)</li>
 <li>Execute <code>attrib +h +s * /d</code> in the root directory of the pico (cmd)</li>
 <li>Reconnect the pico</li>
+<li>Execute <code>attrib +h +s boot_out.txt</code> in the root directory of the pico (cmd)</li>
+<li>Reconnect the pico</li>
 <li>With 7z open the root directory of the pico, for example: <code>D:\</code> as path</li>
 <li>Edit <code>naughty-pico\payload.cmd</code> to your likings (bottom command ejects the pico from the connected device and erases WIN + R buffer)</li>
 <li>Edit <code>code.py</code> to your likings.</li>
