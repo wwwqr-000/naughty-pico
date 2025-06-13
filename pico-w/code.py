@@ -27,7 +27,12 @@ def enter():#Quickly press enter once
 
 def startup():#Startup of USB device
     print(f"Connecting to '{secret.SSID}' ...")
-    wifi.radio.connect(secret.SSID, secret.SSIDPW)
+    while True:
+        try:
+            wifi.radio.connect(secret.SSID, secret.SSIDPW)
+            break
+        
+        except Exception: continue
     print(f"Connected to '{secret.SSID}' on {wifi.radio.ipv4_address}")
     zzz(3.5)
     
